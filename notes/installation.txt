@@ -4,7 +4,7 @@ npm init
 
 Instalando a framework Express:
 
-npm install express -save
+npm install express --save
 
 Instalando o NodeMon
 
@@ -16,7 +16,7 @@ npm install node-rest-client --save
 
 Instalando o EJS
 
-npm install ejs -save
+npm install ejs --save
 
 Instalando o Consign
 
