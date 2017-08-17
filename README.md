@@ -9,7 +9,7 @@ Para instalar os serviços de busca siga os seguintes passos:
 
 1 - Faça o download do servidor NodeJs na URL https://nodejs.org/en/download/ .
 
-2 - Abra um terminal no seu sistema operacional e torne corrente o diretório do projeto ex: cd chat-node-js-express .
+2 - Abra um terminal no seu sistema operacional e torne corrente o diretório do projeto ex: cd search-games-services .
 
 3 - Siga a seguinte ordem de instalação de módulos:
 ```
