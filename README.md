@@ -32,18 +32,18 @@ npm install consign --save
 Buscando pelos jogos com nome "mario":
 
 ```
-https://localhost:5000/jogo/nome/mario
+http://localhost:5000/jogo/nome/mario
 ```
 
 Buscando pelos consoles com nome "PS4":
 
 ```
-https://localhost:5000/console/nome/PS4
+http://localhost:5000/console/nome/PS4
 ```
 Buscando por jogos e consoles relacionados a "MarioKart":
 
 ```
-https://search-games.herokuapp.com/todos/nome/MarioKart
+http://localhost:5000/todos/nome/MarioKart
 
 ```
 ## Autor
