@@ -25,6 +25,8 @@ npm install ejs --save
 
 npm install consign --save
 
+npm install winston --save
+
 ```
 
 ## Exemplos de chamada aos serviços de busca
