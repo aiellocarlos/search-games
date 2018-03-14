@@ -11,21 +11,9 @@ Para instalar os serviços de busca siga os seguintes passos:
 
 2 - Abra um terminal no seu sistema operacional e torne corrente o diretório do projeto ex: cd search-games-services .
 
-3 - Siga a seguinte ordem de instalação de módulos:
+3 - Execute o seguinte comando para iniciar a instalação de módulos:
 ```
-npm init
-
-npm install express --save
-
-npm install -g nodemon
-
-npm install node-rest-client --save
-
-npm install ejs --save
-
-npm install consign --save
-
-npm install winston --save
+npm install --save
 
 ```
 
