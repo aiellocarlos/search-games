@@ -1,7 +1,6 @@
 //Modulo centralizador do negocio de busca de Ofertas. 
 
 
-var buscapeModel; 
 var mercadoLivreModel;
 
 //Definindo o encode type como utf-8
@@ -17,9 +16,6 @@ function BuscaOfertas(app){
 
 	//Criando instancias dos modulos de integracao.
 
-	//Buscape
-	buscapeModel = new app.models.BuscapeModel(options);
-
 	//Mercado Livre
 	mercadoLivreModel = new app.models.MercadoLivreModel(options);	
 }
@@ -30,25 +26,21 @@ BuscaOfertas.prototype.buscaJogo = function(nomeJogo, callback){
 
 	var results = [];
 
-	buscapeModel.buscaJogo(nomeJogo, function(data){
+	mercadoLivreModel.buscaJogo(nomeJogo, function(data){
 
-  		results = results.concat(data);
+		results = results.concat(data);
 
-		mercadoLivreModel.buscaJogo(nomeJogo, function(data){
-
- 		   results = results.concat(data);
-
- 		   //Ordenando as ofertas por menor preco.
- 		   results.sort(function(a, b){
-   				 return parseFloat(a.precoProduto) - parseFloat(b.precoProduto);
-			});
-
-		   var dataBack = JSON.stringify(results); 
-
-			callback(dataBack);
-			return; 
+		//Ordenando as ofertas por menor preco.
+		results.sort(function(a, b){
+				return parseFloat(a.precoProduto) - parseFloat(b.precoProduto);
 		});
+
+		var dataBack = JSON.stringify(results); 
+
+		callback(dataBack);
+		return; 
 	});
+	
 }	
 	
 
@@ -57,25 +49,20 @@ BuscaOfertas.prototype.buscaConsole = function(nomeConsole, callback){
 
 	var results = [];
 
-	buscapeModel.buscaConsole(nomeConsole, function(data){
+	mercadoLivreModel.buscaConsole(nomeConsole, function(data){
 
-  		results = results.concat(data);
+		results = results.concat(data);
 
-		mercadoLivreModel.buscaConsole(nomeConsole, function(data){
-
- 		   results = results.concat(data);
-
-		    //Ordenando as ofertas por menor preco
- 		   results.sort(function(a, b){
-   				 return parseFloat(a.precoProduto) - parseFloat(b.precoProduto);
-			});
-
-
-		   var dataBack = JSON.stringify(results); 
-
-			callback(dataBack);
-			return;
+		//Ordenando as ofertas por menor preco
+		results.sort(function(a, b){
+				return parseFloat(a.precoProduto) - parseFloat(b.precoProduto);
 		});
+
+
+		var dataBack = JSON.stringify(results); 
+
+		callback(dataBack);
+		return;
 	});
 
  }
@@ -86,41 +73,29 @@ BuscaOfertas.prototype.buscaConsoleEJogo = function(nome, callback){
 
 	var results = [];
 
-	buscapeModel.buscaJogo(nome, function(data){
+	mercadoLivreModel.buscaJogo(nome, function(data){
 
-  		results = results.concat(data);
+		results = results.concat(data);
 
-  		buscapeModel.buscaConsole(nome, function(data){
+		mercadoLivreModel.buscaConsole(nome, function(data){
 
-  			results = results.concat(data);
+			results = results.concat(data);
 
-  			mercadoLivreModel.buscaJogo(nome, function(data){
+				//Ordenando as ofertas por menor preco.
+				results.sort(function(a, b){
+					return parseFloat(a.precoProduto) - parseFloat(b.precoProduto);
+				});
 
-  				results = results.concat(data);
+			var dataBack = JSON.stringify(results); 
 
-  				mercadoLivreModel.buscaConsole(nome, function(data){
+			callback(dataBack);
+			return; 
 
-	  				results = results.concat(data);
-
-	  				  //Ordenando as ofertas por menor preco.
-		 		   	 results.sort(function(a, b){
-		   				 return parseFloat(a.precoProduto) - parseFloat(b.precoProduto);
-					 });
-
-	 		   	    var dataBack = JSON.stringify(results); 
-
-					callback(dataBack);
-					return; 
-
-  				});	
+		});	
 
 
-  			});
-			
-		});
-
-		
 	});
+			
 
  }
 
@@ -129,8 +104,3 @@ BuscaOfertas.prototype.buscaConsoleEJogo = function(nome, callback){
 
 	return BuscaOfertas;
 }
-
-
-
-
-

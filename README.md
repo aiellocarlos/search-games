@@ -1,9 +1,9 @@
 # search-games-services
 
 Camada de serviços em Rest com NodeJS que provê a busca de melhores preços Games e Consoles consolidando os produtos ofertados no 
-Mercado Livre e no Buscapé.
+Mercado Livre.
 
-Foram utilizados os seguintes módulos de apoio a aplicação : Express, Node Rest Client e EJS.
+Foram utilizados os seguintes módulos de apoio a aplicação : Express, Node Rest Client, Consign, Winston e EJS.
 
 Para instalar os serviços de busca siga os seguintes passos:
 
@@ -22,19 +22,22 @@ npm install --save
 Buscando pelos jogos com nome "mario":
 
 ```
-http://localhost:5000/jogo/nome/mario
+URI: http://localhost:5000/jogo/nome/mario
+Method: GET
 ```
 
 Buscando pelos consoles com nome "PS4":
 
 ```
-http://localhost:5000/console/nome/PS4
+URI: http://localhost:5000/console/nome/PS4
+Method: GET
 ```
 Buscando por jogos e consoles relacionados a "MarioKart":
 
 ```
-http://localhost:5000/todos/nome/MarioKart
 
+URI: http://localhost:5000/todos/nome/MarioKart
+Method: GET
 ```
 ## Autor
 

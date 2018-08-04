@@ -1,0 +1,27 @@
+{
+  "name": "search-games-services",
+  "version": "1.0.0",
+  "description": "Camada de serviços em Rest com NodeJS que provê a busca de melhores preços Games e Consoles consolidando os produtos ofertados no Mercado Livre.",
+  "main": "app.js",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "node-rest-client": "^3.1.0",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiellocarlos/search-games-services.git"
+  },
+  "author": "Carlos Aiello",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aiellocarlos/search-games-services/issues"
+  },
+  "homepage": "https://github.com/aiellocarlos/search-games-services#readme"
+}
