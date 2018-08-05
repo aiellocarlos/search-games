@@ -1,3 +1,4 @@
+https://travis-ci.org/aiellocarlos/search-games-services.svg?branch=master
 # search-games-services
 
 Camada de serviços em Rest com NodeJS que provê a busca de melhores preços Games e Consoles consolidando os produtos ofertados no 
