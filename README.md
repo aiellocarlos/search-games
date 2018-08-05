@@ -1,3 +1,5 @@
+![alt tag](screenshots/games-logo.png "Search Games Services.")
+
 [![Build Status](https://travis-ci.org/aiellocarlos/search-games-services.svg?branch=master)](https://travis-ci.org/aiellocarlos/search-games-services)
 # search-games-services
 
