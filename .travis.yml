@@ -5,3 +5,4 @@ before_script:
   - npm install
 script:
   - node app.js
+  - npm test
