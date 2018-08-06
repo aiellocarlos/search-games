@@ -10,11 +10,9 @@ Foram utilizados os seguintes módulos de apoio a aplicação : Express, Node Re
 
 Para instalar os serviços de busca siga os seguintes passos:
 
-1 - Faça o download do servidor NodeJs na URL https://nodejs.org/en/download/ .
+1 - Abra um terminal no seu sistema operacional e torne corrente o diretório do projeto ex: cd search-games-services .
 
-2 - Abra um terminal no seu sistema operacional e torne corrente o diretório do projeto ex: cd search-games-services .
-
-3 - Execute o seguinte comando para iniciar a instalação de módulos:
+2 - Execute o seguinte comando para iniciar a instalação de módulos:
 ```
 npm install --save
 
