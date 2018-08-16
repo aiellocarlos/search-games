@@ -17,6 +17,11 @@ Para instalar os serviços de busca siga os seguintes passos:
 npm install --save
 
 ```
+3 - Inicie a aplicação com o comando:
+```
+node app
+
+```
 
 ## Exemplos de chamada aos serviços de busca
 
